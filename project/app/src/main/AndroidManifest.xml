@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hoaxeducation">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logoaplikasi"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logoaplikasi"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".edit.EditActivity"></activity>
+        <activity android:name=".Profil.Main4Activity"/>
+        <activity android:name=".Profil.WebviewActivity"/>
+        <activity android:name=".reset.ResetPasswordActivity" />
+        <activity
+            android:name=".pembelajaran.Materi3Activity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".pembelajaran.Materi2Activity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".pembelajaran.PembelajaranActivity" />
+        <activity
+            android:name=".pembelajaran.Materi1Activity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".CreateBugs.FormReportActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".lihatberita.WebviewActivity" />
+        <activity
+            android:name=".tentang.Tentang"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Profil.ProfilActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".register.RegisterDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".lihatberita.Main4Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Hoax.Main3Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".lihatberita.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Hoax.Hoax"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Hoax.DisplayImagesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LihatBantuan.Main2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Hoax.AdminAddNewProductActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Hoax.AdminCategoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LihatBantuan.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".register.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CreateBantuan.FormBantuanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CreateBantuan.BantuanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CreateLaporan.FormLaporanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.QuisActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.HasilKuis"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Hoax.AdminAddNewProductActivity"
+    android:background="@drawable/inputhoax">
+
+
+    <ImageView
+        android:id="@+id/select_product_image"
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="198dp"
+        android:layout_marginEnd="39dp"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/product_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/product_name"
+        android:layout_width="353dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/roundedcorner"
+        android:hint="Masukan Nama Berita....."
+        app:layout_constraintBottom_toTopOf="@+id/product_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/product_price"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@drawable/roundedcorner"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="20dp"
+        android:hint="Masukan Nama Anda....."
+        app:layout_constraintBottom_toTopOf="@+id/product_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/product_description"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="top"
+        android:background="@drawable/username"
+        android:hint="tulisakan deskripsi tentang berita yang anda posting"
+        app:layout_constraintBottom_toTopOf="@+id/add_new_product"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/add_new_product"
+        android:layout_width="149dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="134dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="5dp"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

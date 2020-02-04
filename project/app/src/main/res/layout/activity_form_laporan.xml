@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateLaporan.FormLaporanActivity"
+    android:background="@drawable/bugs">
+
+    <EditText
+        android:id="@+id/et_namaberita1"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="@drawable/roundedcorner"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="43dp"
+        android:ems="10"
+        android:hint="nama anda"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/et_email1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_email1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/roundedcorner"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:hint="masukan email anda"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/et_url1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/et_url1"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/roundedcorner"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="Fitur apa yang terdapat bug?"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/et_masalah1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/et_masalah1"
+        android:layout_width="match_parent"
+        android:layout_height="171dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="31dp"
+        android:background="@drawable/username"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Tuliskan masalah nya"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/bt_submit1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bt_submit1"
+        android:layout_width="166dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginEnd="109dp"
+        android:layout_marginBottom="25dp"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
